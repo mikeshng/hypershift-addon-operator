@@ -146,8 +146,8 @@ func (c *UpgradeController) RunHypershiftCleanup(ctx context.Context) error {
 }
 
 // This is run when:
-//   1) the controller starts up
-//   2) when the hypershift installation options (secrets and configmap) change
+//  1. the controller starts up
+//  2. when the hypershift installation options (secrets and configmap) change
 func (c *UpgradeController) RunHypershiftInstall(ctx context.Context) error {
 	c.log.Info("enter runHypershiftInstall")
 	defer c.log.Info("exit runHypershiftInstall")
